@@ -5,4 +5,4 @@ from .models import Tour
 def index(request):
     tours=Tour.objects.all()
     context = {'tour':tours}
-    return render(request, 'tours/index.html',context)
+    return render(request, 'tours/home.html',context)
