@@ -4,5 +4,5 @@ from .models import Tour
 # Create your views here.
 def index(request):
     tours=Tour.objects.all()
-    context = {'tour':tours}
+    context = {'tours':tours}
     return render(request, 'tours/home.html',context)
