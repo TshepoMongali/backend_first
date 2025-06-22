@@ -1,16 +1,23 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <title>Asian Tours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'styles/style.css'%}">
 </head>
 <body>
+<script src = "{%static 'js/script.js'%}"></script>
+
+</br>
     <h1>Tour Schedule for June 2025</h1>
     
  <ul>
  {% for tour in tours %}
  <li>{{ tour }}</li>
  {% endfor %}</ul>
+
+ <img src="{%static 'images/IMG-20221028-WA0016.jpg' %} "alt="Django Logo" width="200px">
 </body>
 </html>

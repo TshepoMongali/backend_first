@@ -16,4 +16,4 @@ class Tour(models.Model):
     #string epresentation of tours
     
     def __str__(self):
-        return (f"ID:{self.id}:From {self.origin_country} To {self.destination_country},{self.number_of_nights}nights costs $ {self.price}")
+        return (f"ID:{self.id}: From {self.origin_country} To {self.destination_country},{self.number_of_nights}  nights costs $ {self.price}")
